@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>redditKeys</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" type="text/javascript"></script>
+		<style type="text/css">
+			body { color: #333333; font-size: 16px; margin: 30px 40px; padding: 0; font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif; }
+			
+			h1, h2, h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; }
+			
+			h1 { font-size: 2em; margin: 0 0 5px 0; }
+			
+			h2 { color: #999999; font-size: 1.2em; margin: 0 0 15px 0; }
+			h2 a, h2 a:hover, h2 a:active h2 a:visited { color: #999999; }
+			
+			h3 { font-size: 1.2em; margin: 10px 0 5px 0; }
+			
+			a { color: #3e68ff; }
+			
+			p { margin: 0 0 10px 0; }
+			
+			table { text-align: center; margin: 10px 0; border-collapse: collapse; }
+			
+			th { background-color:#c6d2ff; border-bottom:1px solid #FFFFFF; padding:8px 12px; }
+			
+			tbody tr:hover td { background-color:#d7e0ff; }
+			
+			tbody td { background-color:#E8EDFF; border-bottom:1px solid #FFFFFF; padding:8px 12px; }
+			
+			th.description, td.description { text-align:left; }
+			
+			tfoot td{ text-align:left; font-size:.9em; padding:8px 12px; }
+			
+			.asterisk { font-size:0.9em; }
+			
+			.asterisk-sym { display:inline-block; min-width:15px; }
+		</style>
+	</head>
+	<body>
+		<h1>redditKeys</h1>
+		<h2>Keyboard shortcuts for browsing <a href="http://www.reddit.com">reddit</a>.</h2>
+		<p>redditKeys helps you (and me) save time while browsing reddit by allowing you to never take your hands off the keyboard to use the mouse. 
+		It was inspired by the keyboard shortcuts settings <a href="http://mail.google.com/support/bin/answer.py?hl=en&ctx=mail&answer=6594">available</a> 
+		for Google's Gmail, which was in turn inspired by the keyboard shortcuts in the <a href="http://www.washington.edu/pine/">Pine</a> email client. 
+		Now you can squeeze even more narwhals, bacon, and lolcats into that five-minute reddit break!</p>
+		<p>This project is still very much in development. If you find any bugs or have suggestions for additional shortcuts, let me know on matt [at] mattlong [dot] org</p>
+		<h3>Bookmarklet</h3>
+		<p>Add this link: <a href="javascript:(function(u){u=location.protocol+'//mattlong.org/redditkeys/loader.js'+'?r='+(new%20Date()).getTime();document.body.appendChild(document.createElement('script')).src=u;})();">redditKeys Bookmarklet</a> to your bookmarks toolbar. Then, whenever you're on a reddit page, 
+		click the bookmarklet to get started.</p>
+		
+		<h3>Keyboard shortcuts</h3>
+		<table>
+			<thead>
+			<tr>
+				<th>Shortcut Key</th>
+				<th class="description">Action</th>
+			</tr>
+			</thead>
+			
+			<tbody>
+			<tr>
+				<td>j</td>
+				<td class="description">Move to next link</td>
+			</tr>
+			<tr>
+				<td>k</td>
+				<td class="description">Move to previous link</td>
+			</tr>
+			<tr>
+				<td>o</td>
+				<td class="description">Open current link in new tab/window.<span class="asterisk">*</span></td>
+			</tr>
+			<tr>
+				<td>c</td>
+				<td class="description">Open comments for current link in new tab/window.<span class="asterisk">*</span></td>
+			</tr>
+			<tr>
+				<td>s</td>
+				<td class="description">Save current link.<span class="asterisk">**</span></td>
+			</tr>
+			<tr>
+				<td>e</td>
+				<td class="description">Upvote current link.<span class="asterisk">**</span></td>
+			</tr>
+			<tr>
+				<td>d</td>
+				<td class="description">Downvote current link.<span class="asterisk">**</span></td>
+			</tr>
+			<tr>
+				<td>x</td>
+				<td class="description">Select/unselect current link</td>
+			</tr>
+			<tr>
+				<td># (Shift+3)</td>
+				<td class="description">Hide selected links</td>
+			</tr>
+			</tbody>
+			<tfoot>
+			<tr>
+				<td colspan="2"><span class="asterisk-sym">*</span> You may need to allow popups from reddit.com
+				<br/><span class="asterisk-sym">**</span> Must be logged in to reddit</td>
+			</tr>
+			</tfoot>
+		</table>
+		
+		<h3>Help me brew beer</h3>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHRwYJKoZIhvcNAQcEoIIHODCCBzQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYDA6U56IvK8vUTrDvQs4YYynYFbnGIFgK02jK1AuuKY9en1SwLACcR6wm4/Hpbnvns4JnGdonG9IylIzMl1aXxvNq7MoLyGNOu6hEVJd8Z68t4qREblBMwt8I8zifb9KNcwP2WjGxzVsUqx4zAliVN6Z0Ok4LFjzSAv4oTWfrErHzELMAkGBSsOAwIaBQAwgcQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIMcEVmJSYPYiAgaCpbZS+Fi2JEcWJt3K239VkNMr7t81uAyjVH9q7RjMBK1HSVKFspFJ0dmtJKmPRlqdq3Jo604S9Kl1phkvtxcZYXIpBTnyjc3rs5oH3bfA1EuwoUBwK6PNcOIaU1kipkVO4eI99mSi6o3sd0fHC9vsl5+RR74jKCZ5n6Ioy5i/3tuCAZOyjq65f+qchIYkgorJKZjPLx6ADJQZ1FIGtkNGzoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTAxMDI1MDcwMDU4WjAjBgkqhkiG9w0BCQQxFgQUTQTpPTJFjggxnYL7e1WmykpWnA0wDQYJKoZIhvcNAQEBBQAEgYB/QetUggL7WCdQKVximvKAgOQ26OS8UBzsVDdIhCsAxmZA0nbjPa98NNdUeD0jKqt+WzKO12LyN/guYlrrTR8rNw0u+2nWAFKwSMLKb7loBXxzIZTqs7LdXb0/jAF0ZzPLafcUZchjPKKoCooInFXNab9IBD7oCxr3afBpKIcvfA==-----END PKCS7-----
+">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+		<p>I love good beer and enjoy brewing it too.</p>
+	</body>
+</html>

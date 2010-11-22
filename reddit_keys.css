@@ -1,0 +1,8 @@
+#siteTable .link { background-color: #EEEEFF; }
+#siteTable .link.checked { background-color: #FFFFDD; }
+
+.rk_thing { float:left; padding:12px 0 0 0; }
+.rk_arrow { visibility:hidden; vertical-align:middle; width:14px; height:15px; display:inline-block; }
+.rk_thing.current .rk_arrow {visibility:visible;}
+
+.rk_thing input {margin:0;padding:0;vertical-align:middle;}
